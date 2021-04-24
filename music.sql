@@ -1,0 +1,24 @@
+
+DROP SCHEMA IF EXISTS MUSIC;
+CREATE SCHEMA IF NOT EXISTS MUSIC;
+USE MUSIC;
+
+CREATE TABLE Artist(
+	id INTEGER   PRIMARY KEY,
+    name TEXT
+    );
+
+CREATE TABLE Album (
+	id INTEGER PRIMARY KEY,
+    name TEXT,
+    artist_id INTEGER
+
+    );
+
+CREATE TABLE Song (
+	id INTEGER PRIMARY KEY,
+    name TEXT,
+    trackNumber INTEGER,
+    duration INTEGER,
+    album_id INTEGER
+	);
